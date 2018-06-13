@@ -1,0 +1,7 @@
+cmake_minimum_required(VERSION 3.0)
+project(CAR_EYE)
+set(CMAKE_CXX_STANDARD 11)
+FIND_PACKAGE(OpenCV REQUIRED)
+set(cvModel detcetModel.cpp imageController.cpp)
+add_library(cvModel SHARED ${cvModel})
+target_link_libraries(cvModel ${OpenCV_LIBS} weather)

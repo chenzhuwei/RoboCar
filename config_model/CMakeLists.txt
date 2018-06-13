@@ -1,0 +1,6 @@
+cmake_minimum_required(VERSION 3.0)
+project(UESTC_SafeEye)
+set(CMAKE_CXX_STANDARD 11)
+set(config conf.cpp)
+add_library(config SHARED ${config})
+target_link_libraries(config log)

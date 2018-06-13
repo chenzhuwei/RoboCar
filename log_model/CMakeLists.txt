@@ -1,0 +1,6 @@
+cmake_minimum_required(VERSION 3.0)
+project(CAR_EYE)
+set(CMAKE_CXX_STANDARD 11)
+set(log applog.cpp)
+add_library(log SHARED ${log})
+target_link_libraries(log)

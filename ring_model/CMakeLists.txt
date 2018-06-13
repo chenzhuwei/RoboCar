@@ -1,0 +1,6 @@
+cmake_minimum_required(VERSION 3.0)
+project(CAR_EYE)
+set(CMAKE_CXX_STANDARD 11)
+set(ring ekhoModel.cpp)
+add_library(ring SHARED ${ring})
+target_link_libraries(ring)

@@ -1,0 +1,20 @@
+project(CAR_EYE)
+set(CMAKE_CXX_STANDARD 11)
+INCLUDE_DIRECTORIES(include)
+cmake_minimum_required(VERSION 3.0)
+
+set(EXECUTABLE_OUTPUT_PATH ${PROJECT_BINARY_DIR}/bin)
+set(PROJECT_BINARY_DIR ${PROJECT_BINARY_DIR}/bin)
+set(LIBRARY_OUTPUT_PATH ${PROJECT_BINARY_DIR}/libs)
+link_directories(${PROJECT_BINARY_DIR}/libs ${PROJECT_BINARY_DIR}/lib /usr.local/libs /usr/lib)
+
+add_subdirectory(main)
+add_subdirectory(lib_json)
+add_subdirectory(log_model)
+add_subdirectory(cv_model)
+add_subdirectory(thread_model)
+add_subdirectory(config_model)
+add_subdirectory(window_model)
+add_subdirectory(serial_model)
+add_subdirectory(weather_model)
+
